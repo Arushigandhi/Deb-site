@@ -7,6 +7,7 @@ import SpeakerRoles from './pages/SpeakerRoles';
 import Themes from './pages/Themes';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import TypeWriter from './components/TypeWriter';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           </Route>
         </Switch>
       </Router>
+      <TypeWriter />
     </>
   );
 }
