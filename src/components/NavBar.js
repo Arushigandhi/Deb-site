@@ -14,13 +14,14 @@ const NavBarStyles = styled.div`
     li {
       display: inline-flex;
       margin: auto;
-      border-radius: 2px;
-      transition: 0.3s ease background-color;
+      &:hover {
+        border-bottom: 1.5px solid black;
+      }
     }
     a {
       font-family: 'RobotoMono Regular';
       font-weight: 400;
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
       font-size: 1.2rem;
       color: black;
       outline: none;
@@ -51,9 +52,9 @@ export default function NavBar() {
                 About Us
                 </NavLink>
             </li>
-            <li>
+            
             <span class="dot"></span>
-            </li>
+           
             <li>
                 <NavLink to="/ContactUs" >
                 Contact Us

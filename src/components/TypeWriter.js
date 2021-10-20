@@ -18,20 +18,15 @@ p {
   margin: 0 auto;
 }
 
-/* Animation */
 p {
   animation: animated-text 4s steps(29,end) 1s 1 normal both,
              animated-cursor 600ms steps(29,end) infinite;
 }
 
-/* text animation */
-
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 350px;}
+  to{width: 300px;}
 }
-
-/* cursor animations */
 
 @keyframes animated-cursor{
   from{border-right-color: black;}
@@ -43,7 +38,7 @@ p {
 export default function TypeWriter() {
     return (
         <TypeStyles>
-            <p>This is a typewriter effect.</p>
+            <p>Welcome to Deb-Site.</p>
         </TypeStyles>
     )
 }
