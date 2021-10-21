@@ -3,18 +3,18 @@ import styled from 'styled-components';
 
 const TypeStyles = styled.div`
 padding: 80px;
+
 body{
   padding: 40px;
-  background-color: #121212;  
 }
 
 p {
-  border-right: solid 3px black;
+  border-right: solid 3px white;
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'Montserrat';  
   font-size: 28px;
-  color: black;
+  color: white;
   margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ p {
 }
 
 @keyframes animated-cursor{
-  from{border-right-color: black;}
+  from{border-right-color: white;}
   to{border-right-color: transparent;}
 }
 

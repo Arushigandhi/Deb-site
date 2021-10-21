@@ -4,12 +4,13 @@ import styled from 'styled-components';
 
 const NavBarStyles = styled.div`
   position: static;
-  width: 100%;
-  .solid {
-    border: 0.5px solid black;
+  max-width: 90%;
+  margin: auto;
+  .navBar{
+    border-bottom: 1px solid #7c238c;
   }
   ul {
-    width: 100%;
+    max-width: 90%;
     li {
      display: inline-flex;
       &:hover {
@@ -17,11 +18,8 @@ const NavBarStyles = styled.div`
       }
     }
     a {
-      font-family: 'RobotoMono Regular';
-      font-weight: 400;
       padding: 1rem 1.5rem;
-      font-size: 1rem;
-      color: black;
+      color: white;
       outline: none;
       text-decoration: none;
     }
@@ -35,23 +33,20 @@ const NavBarStyles = styled.div`
 export default function NavBar() {
     return (
         <NavBarStyles>
-        <div>
+        <div className="navBar">
             <ul>
-        
             <li>
                 <NavLink to="/AboutUs" >
                 ABOUT US
                 </NavLink>
             </li>
                 
-            <li>
+            <li className="noPadding">
                 <NavLink to="/ContactUs" >
                 CONTACT US
                 </NavLink>
             </li>
-
             </ul>
-            <hr class="solid"/>
         </div>
       </NavBarStyles>
     );
