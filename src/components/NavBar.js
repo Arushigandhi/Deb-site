@@ -5,39 +5,30 @@ import styled from 'styled-components';
 const NavBarStyles = styled.div`
   position: static;
   width: 100%;
-  padding: 1rem 0;
-  margin: auto;
+  .solid {
+    border: 0.5px solid black;
+  }
   ul {
-    display: flex;
-    justify-content: center;
     width: 100%;
     li {
-      display: inline-flex;
-      margin: auto;
+     display: inline-flex;
       &:hover {
-        border-bottom: 1.5px solid black;
+        color: #7c238c;
       }
     }
     a {
       font-family: 'RobotoMono Regular';
       font-weight: 400;
       padding: 1rem 1.5rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: black;
       outline: none;
       text-decoration: none;
     }
     .active {
-      color: black;
+      color: #7c238c;
     }
-    .dot {
-      height: 100px;
-      width: 100px;
-      background-color: none;
-      border: 2px solid black;
-      border-radius: 50%;
-      display: inline-block;
-    }
+
   }
   `;
 
@@ -49,19 +40,18 @@ export default function NavBar() {
         
             <li>
                 <NavLink to="/AboutUs" >
-                About Us
+                ABOUT US
                 </NavLink>
             </li>
-            
-            <span class="dot"></span>
-           
+                
             <li>
                 <NavLink to="/ContactUs" >
-                Contact Us
+                CONTACT US
                 </NavLink>
             </li>
 
             </ul>
+            <hr class="solid"/>
         </div>
       </NavBarStyles>
     );

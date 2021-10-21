@@ -25,7 +25,7 @@ p {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 300px;}
+  to{width: 500px;}
 }
 
 @keyframes animated-cursor{
@@ -38,7 +38,7 @@ p {
 export default function TypeWriter() {
     return (
         <TypeStyles>
-            <p>Welcome to Deb-Site.</p>
+            <p>Welcome to the ultimate debating haven.</p>
         </TypeStyles>
     )
 }
